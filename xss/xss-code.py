@@ -12,6 +12,8 @@ def filter(user_input):
         .replace("confirm", "")
         .replace(">", "&gt;")
         .replace("\"", "\"\\")
+        .replace("}", "")
+        .replace("{", "")
     )
     if (
         "script" not in user_input
